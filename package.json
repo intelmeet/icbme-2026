@@ -1,0 +1,29 @@
+{
+  "name": "allconferencealerts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/generate-seo-assets.mjs && vite build && node scripts/prerender.mjs && node scripts/audit-seo.mjs",
+    "build:client": "vite build",
+    "seo:generate": "node scripts/generate-seo-assets.mjs",
+    "seo:prerender": "node scripts/prerender.mjs",
+    "seo:audit": "node scripts/audit-seo.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.6.0",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.0"
+  }
+}
